@@ -1,0 +1,34 @@
+{
+    "name": "bachphuc/laravel-settings",
+    "description": "settings package for laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bachphuc",
+            "email": "trieuquangphuc123@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "bachphuc\\LaravelSettings\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "bachphuc\\LaravelSettings\\Providers\\SettingServiceProvider"
+            ],
+            "aliases": {
+                "AppSetting" : "bachphuc\\LaravelSettings\\Facades\\AppSettingFacade"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
